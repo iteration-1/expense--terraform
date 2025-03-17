@@ -1,5 +1,5 @@
 module "frontend" {
-  source    = "./module/app"
+  source    = "./modules/app"
   component = frontend
 
   env            = var.env
