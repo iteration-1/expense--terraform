@@ -34,5 +34,6 @@ resource "aws_route53_record" "route" {
   type    = "A"
   zone_id = var.zone_id
   records = [aws_instance.ec2.private_ip]
+  ttl     = 50
 
 }
