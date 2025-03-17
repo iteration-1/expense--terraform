@@ -4,4 +4,3 @@ data "aws_ami" "ec2" {
   owners           = ["973714476881"]
 
   }
-}
