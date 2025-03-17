@@ -1,6 +1,6 @@
 module "frontend" {
   source    = "./modules/app"
-  component = frontend
+  component = "frontend"
 
   env            = var.env
   instance_type = var.instance_type
