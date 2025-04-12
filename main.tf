@@ -3,7 +3,7 @@ module "frontend" {
   source    = "./modules/app"
   component = "frontend"
 
-  env            = var.env
+  env           = var.env
   instance_type = var.instance_type
   ssh_user      = var.ssh_user
   ssh_password  = var.ssh_password
@@ -16,7 +16,7 @@ module "backend" {
   source    = "./modules/app"
   component = "backend"
 
-  env            = var.env
+  env           = var.env
   instance_type = var.instance_type
   ssh_user      = var.ssh_user
   ssh_password  = var.ssh_password
