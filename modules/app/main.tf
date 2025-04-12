@@ -6,6 +6,7 @@ resource "aws_instance" "ec2" {
   tags = {
     Name    = var.component
     Monitor = "yes"
+    env     = var.env
   }
 }
 
