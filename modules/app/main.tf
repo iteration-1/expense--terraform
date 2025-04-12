@@ -4,7 +4,8 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids = [data.aws_security_group.selected.id]
 
   tags = {
-    Name = var.component
+    Name    = var.component
+    Monitor = "yes"
   }
 }
 
